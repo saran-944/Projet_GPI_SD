@@ -1,0 +1,48 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import cv2
+import tifffile as tif
+from scipy import ndimage
+
+from PIL import Image
+import importlib.util
+import subprocess
+import sys
+import requests
+from io import BytesIO  # Ensure this import is present
+
+from skimage import io, transform
+from skimage.feature import peak_local_max # Added this import
+from scipy.signal import correlate2d
+
+import urllib.request
+%pip install biopython
+from Bio.PDB import PDBParser, PDBIO
+from mpl_toolkits.mplot3d import Axes3D
+
+
+# Ensure scikit-image is available for bilateral denoising.
+if importlib.util.find_spec('skimage') is None:
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'scikit-image'])
+
+from skimage.restoration import denoise_bilateral
+
+
+# Install required package (run once)
+%pip install mrcfile
+
+import mrcfile
+
+%pip install gdown
+
+import gdown
+import mrcfile
+import os
+
+# if needed, you can install packages using pip
+# %pip install scikit-image
+
+# Set random seed for reproducibility
+np.random.seed(42)
+
+from scipy.ndimage import gaussian_filter
