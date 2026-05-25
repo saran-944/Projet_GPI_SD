@@ -11,6 +11,7 @@
 4. Visualization: Generates score maps (NCC Score Maps) and facilitates particle extraction.
 
 > Installation:
+
 The project requires Python 3 and the following libraries: "requierement.txt"
 
 > Usage:
