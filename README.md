@@ -15,10 +15,6 @@
 The project requires Python 3 and the following libraries: "requierement.txt"
 
 > Usage:
-1. Load your micrograph (e.g., .mrc or standard image formats).
-2. Define your template (e.g., proj_xy in the script).
-3. Run the main script:
-
-Contributor
-
-[Saran DEMBELE]
+1. Load your micrograph 
+2. Define your template 
+3. Run the main script
