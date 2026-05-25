@@ -1,13 +1,13 @@
 ## Projet_GPI_SD
 # Cryo-EM Particle Picking Pipeline
 
-*This project implements an automated particle picking pipeline for cryo-electron microscopy. The tool utilizes Normalized Cross-Correlation (NCC) optimized for micrographs to identify and extract protein particles..* 
+*This project is an automated particle picking pipeline for cryo-electron microscopy. It uses Normalized Cross-Correlation (NCC) for micrographs to identify and extract particles.* 
 
 > Steps: 
 
-1. Advanced Pre-processing: Includes binning, normalization, padding, and denoising to enhance the signal-to-noise ratio.
-2. Efficient Template Matching: Utilizes NCC with and masking for detection.
-3. Post-processing: Implements local maximum filtering to isolate particle and prevent redundant detections.
+1. Pre-processing: binning, normalization, padding, and denoising.
+2. Efficient Template Matching: NCC with and masking for detection.
+3. Post-processing: local maximum filtering to isolate particle and prevent redundant detections.
 4. Visualization: Generates score maps (NCC Score Maps) and facilitates particle extraction.
 
 > Installation:
