@@ -20,4 +20,5 @@ The project requires Python 3 and the following libraries: "requierement.txt"
 3. Run the main script:
 
 Contributor
+
 [Saran DEMBELE]
