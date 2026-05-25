@@ -1,10 +1,22 @@
 ## Projet_GPI_SD
-# Master training project
+# Cryo-EM Particle Picking Pipeline
 
-*The objective of this class is to complete a informatic project.* 
+*This project implements an automated particle picking pipeline for cryo-electron microscopy. The tool utilizes Normalized Cross-Correlation (NCC) optimized for micrographs to identify and extract protein particles..* 
 
-> Goals of this class: 
+> Steps: 
 
-1. **Create your own project**
-2. Construct it with your own code 
-3. Being able to give something at the end of the semester
+1. Advanced Pre-processing: Includes binning, normalization, padding, and denoising to enhance the signal-to-noise ratio.
+2. Efficient Template Matching: Utilizes NCC with and masking for detection.
+3. Post-processing: Implements local maximum filtering to isolate particle and prevent redundant detections.
+4. Visualization: Generates score maps (NCC Score Maps) and facilitates particle extraction.
+
+> Installation:
+The project requires Python 3 and the following libraries: "requierement.txt"
+
+> Usage:
+1. Load your micrograph (e.g., .mrc or standard image formats).
+2. Define your template (e.g., proj_xy in the script).
+3. Run the main script:
+
+Contributor
+[Saran DEMBELE]
